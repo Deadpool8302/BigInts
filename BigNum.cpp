@@ -378,7 +378,7 @@ bool BigNum::operator>=(const BigNum& obj)
 
 bool BigNum::operator<=(const BigNum& obj)
 {
-	if (*this < obj || *this == obj)
+	if (*this < obj || *this == obj) return true;
 	return false;
 }
 
